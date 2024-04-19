@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP FORM CAR</title>
+</head>
+<body>
+    <form action="https://httpbin.org/get" method="get">
+
+        <fieldset>
+            <legend>A SIGNUP FORM</legend>
+
+            <table>
+
+                <tr>
+                    <td>
+                        <label for="name">Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name" value="Name" placeholder="Name" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" value="Email" placeholder="Name" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="gender_m" required>
+                        <label for="gender_m">Male</label>
+                        
+                        <input type="radio" name="gender" id="gender_f" required>
+                        <label for="gender_f">Female</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="cars">Car Brands</label>
+                    </td>
+                    <td>
+                        <select name="cars" id="cars" required>
+                            <option value="choose">--Please choose an option</option>
+                            <option value="tata">Tata</option>
+                            <option value="volkswagen">Volkswagen</option>
+                            <option value="benz">Merceded Benz</option>
+                            <option value="bmw">BMW</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="maruti">Maruti Suzuki</option>
+                            <option value="ford">Ford</option>
+                            <option value="tayota">Tayota</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="honda">Honda</option>
+                            <option value="nissan">Nissan</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="age">Age</label>
+                    </td>
+
+                    <td>
+                        <input type="number" name="age" id="age" value="Age" placeholder="Age" min="18" max="75" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="dob">DOB</label>
+                    </td>
+                    <td>
+                        <input type="date" name="dob" id="dob" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="tel">Phone Number</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="tel" id="tel" value="xxx-xxx-xxxx" placeholder="xxx-xxx-xxxx">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="tos" id="tos" required>
+                        <label for="tos">I agree to the TOS</label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit" formaction="https://httpbin.org/post" formmethod="post">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
